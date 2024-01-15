@@ -14,7 +14,7 @@ const char* schedules[] = {"Tuesday 1",   "Tuesday 2",  "Wednesday 1",
 int option = 0;
 bool selected = 0;
 
-int schedulesBin[][8] = {
+int schedulesBin[][54] = {
     {1100, 1010, 1100, 1010, 1100, 1010, 1100, 1010, 1100, 1010, 1101,
      1010, 1101, 1010, 1101, 1010, 1101, 1010, 1101, 1010, 1101, 1010,
      1101, 1010, 1101, 1010, 1101, 1010, 1101, 1010, 1101, 1010, 1101,
@@ -114,6 +114,7 @@ void loop() {
 }
 
 void lightLEDs() {
+  // organics, garbage, recycling, yardwaste
   digitalWrite(green, HIGH);
   digitalWrite(red, HIGH);
   digitalWrite(yellow, HIGH);
